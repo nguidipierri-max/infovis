@@ -40,7 +40,19 @@
       padding: 30px;
       margin-bottom: 30px;
     }
-    iframe {
+    .card h2 {
+      font-size: 1.5em;
+      color: #2E2A24;
+      margin-top: 0;
+    }
+    .credit {
+      font-size: 0.85em;
+      color: #A08F7D;
+      font-style: italic;
+      margin-top: 14px;
+      margin-bottom: 0;
+    }
+    iframe, object {
       display: block;
       margin: 0 auto;
       max-width: 100%;
@@ -60,9 +72,17 @@
       <h1>🍽️ Restaurantes Visitados</h1>
       <p class="subtitle">Una exploración visual de mis salidas a comer en Buenos Aires</p>
     </header>
+
     <div class="card">
       <iframe title="¿Pagar más garantiza mejor puntuación?" aria-label="Scatter Plot" id="datawrapper-chart-WCKpT" src="https://datawrapper.dwcdn.net/WCKpT/1/" scrolling="no" frameborder="0" style="border: none;" width="900" height="575" data-external="1"></iframe>
     </div>
+
+    <div class="card">
+      <h2>¿En qué barrios se va más de mi plata al salir a comer?</h2>
+      <object type="image/svg+xml" data="./treemap.svg" width="900"></object>
+      <p class="credit">Gráfico hecho por Niccolina Guidi Pierri con RAWGraphs · Fuente: registro personal</p>
+    </div>
+
     <footer>
       TP1 — Visualización de Datos Personales · ITBA 2026
     </footer>
